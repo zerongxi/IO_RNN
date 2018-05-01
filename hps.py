@@ -26,8 +26,10 @@ te_ratio = 1.0 - tr_ratio - va_ratio
 optimizer = 'Adam'
 lr = 1e-3
 lr_decay = 0.98
-print_step = 20
+print_step = 100
 step_size = 3
 n_epoch = 200
 early_stopping = 5
 clip_norm = 5.0
+
+debug = None #50000

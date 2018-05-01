@@ -36,19 +36,18 @@ class LSTMseq2seq(torch.nn.Module):
         return hidden
 
     def forward(self, x, mode, future=0):
-        #x = x.cuda()
+        x = x.cuda()
         hidden = self.init_hidden(x.size(1))
         if mode == 'train':
             self.lstm.flatten_parameters()
             lstm_out, hidden = self.lstm(x, hidden)
             linear_out = self.linear(lstm_out)
             relu_out = F.relu(linear_out)
-            print(relu_out.shape)
             out = F.dropout(relu_out, self.dropout, training=True)
             out = {
-                'asu': F.softmax(out[:, :, :self.data_shape[2][0]]),
+                'asu': out[:, :, :self.data_shape[2][0]],
                 'size': out[:, :, self.data_shape[2][0]:self.data_shape[2][1]],
-                'opcode/home/zxi': F.softmax(out[:, :, self.data_shape[2][1]:self.data_shape[2][2]]),
+                'opcode': out[:, :, self.data_shape[2][1]:self.data_shape[2][2]],
                 'time_diff': out[:, :, self.data_shape[2][2]:]
             }
         else:
@@ -62,12 +61,12 @@ class LSTMseq2seq(torch.nn.Module):
                 linear_out = self.linear(lstm_out)
                 relu_out = F.relu(linear_out)
                 last = relu_out
-                last[:, :, :self.data_shape[2][0]] = F.softmax(last[:, :, :self.data_shape[2][0]])
+                last[:, :, :self.data_shape[2][0]] = F.softmax(last[:, :, :self.data_shape[2][0]], -1)
                 last[:, :, self.data_shape[2][1]:self.data_shape[2][2]] =\
-                    F.softmax(last[:, :, self.data_shape[2][1]:self.data_shape[2][2]])
+                    F.softmax(last[:, :, self.data_shape[2][1]:self.data_shape[2][2]], -1)
                 out.data[cnt] = last.data
             out = {
-                'asu': out[:, :, self.data_shape[2][0]],
+                'asu': out[:, :, :self.data_shape[2][0]],
                 'size': out[:, :, self.data_shape[2][0]:self.data_shape[2][1]],
                 'opcode': out[:, :, self.data_shape[2][1]:self.data_shape[2][2]],
                 'time_diff': out[:, :, self.data_shape[2][2]:]

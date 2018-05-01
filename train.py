@@ -67,10 +67,11 @@ class Train:
 
     def get_loss(self, out, y):
         for i in y:
-            y[i] = torch.max(y[i], 0)
             out[i] = out[i].view(-1, out[i].shape[-1])
-        print('out', out['asu'].shape)
-        print('y', torch.sum(y['asu'], 1))
+            y[i] = y[i].view(-1, y[i].shape[-1])
+            if i == 'asu' or i == 'opcode':
+                _, y[i] = torch.max(y[i], -1)
+        pass
         losses = [
             self.cross_entropy_fn(out['asu'], y['asu']),
             self.mse_fn(out['size'], y['size']),
@@ -81,28 +82,16 @@ class Train:
 
     def get_accu(self, out, y):
         def compute_accu(pred, gt):
-            _, pred_label = torch.max(pred, 2)
-            _, gt_label = torch.max(gt, 2)
+            _, pred_label = torch.max(pred, -1)
+            _, gt_label = torch.max(gt, -1)
             total = gt_label.nelement()
             correct = (pred_label == gt_label).sum().item()
-            return torch.div(correct / total)
+            return np.divide(correct, total)
         accus = {
-            'asu': compute_accu(
-                out[:, :, :self.data_shape[2][0]],
-                y[:, :, :self.data_shape[2][0]]
-            ),
-            'size': torch.mean(
-                out[:, :, self.data_shape[2][0]:self.data_shape[2][1]] -
-                y[:, :, self.data_shape[2][0]:self.data_shape[2][1]]
-            ),
-            'opcode': compute_accu(
-                out[:, :, self.data_shape[2][1]:self.data_shape[2][2]],
-                y[:, :, self.data_shape[2][1]:self.data_shape[2][2]]
-            ),
-            'time_diff': torch.mean(
-                out[:, :, self.data_shape[2][2]:] -
-                y[:, :, self.data_shape[2][2]:]
-            )
+            'asu': compute_accu(out['asu'], y['asu']),
+            'size': torch.mean(out['size'] - y['size']),
+            'opcode': compute_accu(out['opcode'], y['opcode']),
+            'time_diff': torch.mean(out['time_diff'] - y['time_diff'])
         }
         return accus
 
@@ -123,8 +112,9 @@ class Train:
             for i in y:
                 y[i] = torch.autograd.Variable(torch.from_numpy(y[i])).cuda()
             out = self.model(x, 'train')
+            accus = self.get_accu(out, y)
             losses = self.get_loss(out, y)
-            loss = torch.sum(losses)
+            loss = sum(losses)
             loss.backward()
             torch.nn.utils.clip_grad_norm(self.model.parameters(), hps.clip_norm)
             self.optimizer.step()
@@ -133,19 +123,22 @@ class Train:
             x, y = self.train_data.get_batch()
 
             if batch % hps.print_step == 0:
-                accus = self.get_accu(out, y)
-                log_line = 'epoch%3d batch%4d total_loss:%f asu_loss:%f size_loss:%f opcode_loss:%f' \
-                           'time_diff_loss:%f asu_accu:%f opcode_accu:%f batch_time:%s\n' % \
+                log_line = 'epoch%3d  batch%4d  total_loss:%f  asu_loss:%f  size_loss:%f  opcode_loss:%f  ' \
+                        'time_diff_loss:%f  asu_accu:%f  opcode_accu:%f  batch_time:%s' % \
                            (self.epoch, batch, loss, losses[0], losses[1], losses[2], losses[3],
                             accus['asu'], accus['opcode'], datetime.now() - batch_t)
+                print(log_line)
+                '''
                 with open(batch_log, 'a') as f:
-                    f.write(log_line)
+                    f.write(log_line + '\n')
+                '''
 
         train_loss /= batch
 
         evaluate = Evaluation('val')
-        val_pred_path = evaluate.infer(self.data_path, model=self.model, model_path=self.model_path)
+        val_pred_path = evaluate.infer(self.data_path, model=self.model)
         val_losses, val_accus = evaluate.eval(self.data_path, val_pred_path)
+        del evaluate
 
         is_best = False
         if val_losses['all'] < self.best_val_loss:
@@ -168,15 +161,14 @@ class Train:
         }
         self.save_checkpoint(state, is_best)
 
-        train_loss = np.sum([train_loss[i] for i in train_loss])
-        log_line = [
-            'epoch%3d train_loss:%f, val_loss:%f, asu_loss:%f, size_loss:%f, opcode_loss:%f'
-            'time_diff_loss:%f, asu_accu:%f, opcode:%f, cost_time: %s\n' %
-            (self.epoch, train_loss, val_losses['all'], val_losses['asu'], val_losses['size'], val_losses['opcode'],
-             val_losses['time_diff'], val_accus['asu'], val_accus['opcode'], datetime.now() - epoch_t)
-        ]
+        train_loss = np.sum(train_loss)
+        log_line = 'epoch%3d train_loss:%f, val_loss:%f, asu_loss:%f, size_loss:%f, opcode_loss:%f, ' \
+        'time_diff_loss:%f, asu_accu:%f, opcode:%f, cost_time: %s' %\
+                   (self.epoch, train_loss, val_losses['all'], val_losses['asu'], val_losses['size'], val_losses['opcode'],
+                    val_losses['time_diff'], val_accus['asu'], val_accus['opcode'], datetime.now() - epoch_t)
+        print(log_line)
         with open(epoch_log, 'a') as f:
-            f.writelines(log_line)
+            f.writelines(log_line + '\n')
 
     def train(self):
         while self.epoch < hps.n_epoch:

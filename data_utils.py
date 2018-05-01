@@ -40,6 +40,11 @@ class DataLoader:
             self.end = n_sample
         else:
             ValueError('Mode is not valid!')
+        if hps.debug is not None:
+            if mode == 'train':
+                self.end = self.beg + hps.debug
+            else:
+                self.end = self.beg + hps.debug + hps.in_len
         self.n_sample = self.end - self.beg
         for field in self.data:
             self.data[field] = self.data[field][self.beg:self.end]
@@ -57,7 +62,6 @@ class DataLoader:
         }
         data_shape = [data_shape, sum([data_shape[i] for i in data_shape])]
         data_shape.append(np.cumsum([data_shape[0][i] for i in data_shape[0]]).astype(np.uint8))
-        print(data_shape)
         return data_shape
 
     def get_batch(self, retry=0):
@@ -123,7 +127,6 @@ class DataLoader:
                 y['opcode'][:, cnt_inbatch, :] = self.data['opcode'][y_beg:y_end]
                 y['time_diff'][:, cnt_inbatch, :] = self.data['time_diff'][y_beg:y_end]
                 cnt_sample += hps.step_size
-
             if complete:
                 break
             self.queue.put([x, y])
@@ -156,7 +159,7 @@ class DataLoader:
                 x_end = cnt_sample + x_len
                 y_beg = cnt_sample + x_len
                 y_end = cnt_sample + x_len + y_len
-                if x_end > self.n_sample:
+                if y_end > self.n_sample:
                     complete = True
                     break
                 x[:, cnt_inbatch, :n_asu] = self.data['asu'][x_beg:x_end]
