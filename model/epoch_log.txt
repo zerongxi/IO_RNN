@@ -1,0 +1,125 @@
+epoch  0 train_loss:7.938941, val_loss:7.966929, asu_loss:4.104630, size_loss:2.475825, opcode_loss:1.386290, time_diff_loss:0.000184, asu_accu:0.138584, opcode:0.227650, cost_time: 0:01:32.520743
+epoch  1 train_loss:7.842314, val_loss:8.114955, asu_loss:4.157713, size_loss:2.570768, opcode_loss:1.386290, time_diff_loss:0.000184, asu_accu:0.042830, opcode:0.227650, cost_time: 0:01:33.081341
+epoch  2 train_loss:7.815691, val_loss:7.996172, asu_loss:4.158572, size_loss:2.451125, opcode_loss:1.386290, time_diff_loss:0.000184, asu_accu:0.042809, opcode:0.227650, cost_time: 0:01:32.858226
+epoch  3 train_loss:7.738586, val_loss:8.011033, asu_loss:4.099137, size_loss:2.525422, opcode_loss:1.386290, time_diff_loss:0.000184, asu_accu:0.138584, opcode:0.227650, cost_time: 0:01:32.902107
+epoch  4 train_loss:7.720420, val_loss:7.943199, asu_loss:4.097424, size_loss:2.459300, opcode_loss:1.386290, time_diff_loss:0.000184, asu_accu:0.134730, opcode:0.227650, cost_time: 0:01:33.228729
+epoch  5 train_loss:7.718662, val_loss:7.966201, asu_loss:4.097180, size_loss:2.482547, opcode_loss:1.386290, time_diff_loss:0.000184, asu_accu:0.134360, opcode:0.227650, cost_time: 0:01:33.056300
+epoch  6 train_loss:7.707572, val_loss:7.922186, asu_loss:4.096826, size_loss:2.438886, opcode_loss:1.386290, time_diff_loss:0.000184, asu_accu:0.134345, opcode:0.227650, cost_time: 0:01:33.146727
+epoch  7 train_loss:7.565975, val_loss:7.875278, asu_loss:4.105872, size_loss:2.521864, opcode_loss:1.247359, time_diff_loss:0.000184, asu_accu:0.124852, opcode:0.633440, cost_time: 0:01:32.829882
+epoch  8 train_loss:7.487261, val_loss:7.811553, asu_loss:4.103336, size_loss:2.468194, opcode_loss:1.239839, time_diff_loss:0.000184, asu_accu:0.128311, opcode:0.626455, cost_time: 0:01:33.644634
+epoch  9 train_loss:7.469610, val_loss:7.713588, asu_loss:4.105383, size_loss:2.390677, opcode_loss:1.217345, time_diff_loss:0.000184, asu_accu:0.125595, opcode:0.657931, cost_time: 0:01:32.797215
+epoch 10 train_loss:7.456328, val_loss:7.783867, asu_loss:4.107661, size_loss:2.478898, opcode_loss:1.197124, time_diff_loss:0.000184, asu_accu:0.123126, opcode:0.685883, cost_time: 0:01:32.835569
+epoch 11 train_loss:7.450395, val_loss:7.713679, asu_loss:4.104744, size_loss:2.393427, opcode_loss:1.215324, time_diff_loss:0.000184, asu_accu:0.126035, opcode:0.665097, cost_time: 0:01:34.270389
+epoch 12 train_loss:7.445971, val_loss:7.670489, asu_loss:4.102505, size_loss:2.343507, opcode_loss:1.224293, time_diff_loss:0.000184, asu_accu:0.127113, opcode:0.656011, cost_time: 0:01:38.419880
+epoch 13 train_loss:7.441012, val_loss:7.689187, asu_loss:4.106717, size_loss:2.359105, opcode_loss:1.223181, time_diff_loss:0.000184, asu_accu:0.121990, opcode:0.638478, cost_time: 0:01:35.937363
+epoch 14 train_loss:7.437204, val_loss:7.666388, asu_loss:4.104453, size_loss:2.342829, opcode_loss:1.218921, time_diff_loss:0.000184, asu_accu:0.123424, opcode:0.657535, cost_time: 0:01:35.101839
+epoch 15 train_loss:7.433513, val_loss:7.670688, asu_loss:4.102506, size_loss:2.357068, opcode_loss:1.210930, time_diff_loss:0.000184, asu_accu:0.124358, opcode:0.664979, cost_time: 0:01:36.263750
+epoch 16 train_loss:7.430351, val_loss:7.667597, asu_loss:4.104029, size_loss:2.349452, opcode_loss:1.213932, time_diff_loss:0.000184, asu_accu:0.124136, opcode:0.656836, cost_time: 0:01:39.301439
+epoch 17 train_loss:7.423931, val_loss:7.717655, asu_loss:4.106277, size_loss:2.384480, opcode_loss:1.226714, time_diff_loss:0.000184, asu_accu:0.122245, opcode:0.620001, cost_time: 0:01:41.365403
+epoch 18 train_loss:7.418810, val_loss:7.692225, asu_loss:4.106344, size_loss:2.360195, opcode_loss:1.225502, time_diff_loss:0.000184, asu_accu:0.122027, opcode:0.616600, cost_time: 0:01:35.870028
+epoch 19 train_loss:7.416605, val_loss:7.683299, asu_loss:4.101797, size_loss:2.356408, opcode_loss:1.224910, time_diff_loss:0.000184, asu_accu:0.122914, opcode:0.621496, cost_time: 0:01:37.457256
+epoch 20 train_loss:7.414287, val_loss:7.662648, asu_loss:4.102091, size_loss:2.325272, opcode_loss:1.235101, time_diff_loss:0.000184, asu_accu:0.123310, opcode:0.601921, cost_time: 0:01:38.569904
+epoch 21 train_loss:7.413941, val_loss:7.670346, asu_loss:4.100484, size_loss:2.338780, opcode_loss:1.230898, time_diff_loss:0.000184, asu_accu:0.123689, opcode:0.609908, cost_time: 0:01:39.046352
+epoch 22 train_loss:7.413534, val_loss:7.654624, asu_loss:4.100520, size_loss:2.322224, opcode_loss:1.231697, time_diff_loss:0.000184, asu_accu:0.123751, opcode:0.608303, cost_time: 0:01:38.262593
+epoch 23 train_loss:7.412150, val_loss:7.576770, asu_loss:4.099626, size_loss:2.263292, opcode_loss:1.213668, time_diff_loss:0.000184, asu_accu:0.121389, opcode:0.643825, cost_time: 0:01:38.512574
+epoch 24 train_loss:7.410301, val_loss:7.631454, asu_loss:4.099064, size_loss:2.304385, opcode_loss:1.227821, time_diff_loss:0.000184, asu_accu:0.123447, opcode:0.619653, cost_time: 0:01:38.714884
+epoch 25 train_loss:7.411958, val_loss:7.616328, asu_loss:4.101055, size_loss:2.294010, opcode_loss:1.221080, time_diff_loss:0.000184, asu_accu:0.121150, opcode:0.637316, cost_time: 0:01:38.064177
+epoch 26 train_loss:7.406625, val_loss:7.649189, asu_loss:4.100522, size_loss:2.312414, opcode_loss:1.236069, time_diff_loss:0.000184, asu_accu:0.121971, opcode:0.614380, cost_time: 0:01:38.281167
+epoch 27 train_loss:7.402178, val_loss:7.621122, asu_loss:4.099218, size_loss:2.298359, opcode_loss:1.223361, time_diff_loss:0.000184, asu_accu:0.122222, opcode:0.635551, cost_time: 0:01:38.232442
+epoch 28 train_loss:7.399972, val_loss:7.581812, asu_loss:4.100889, size_loss:2.260019, opcode_loss:1.220720, time_diff_loss:0.000184, asu_accu:0.121176, opcode:0.636552, cost_time: 0:01:38.069796
+epoch 29 train_loss:7.396689, val_loss:7.623111, asu_loss:4.101992, size_loss:2.293544, opcode_loss:1.227391, time_diff_loss:0.000184, asu_accu:0.120512, opcode:0.619073, cost_time: 0:01:38.580517
+epoch 30 train_loss:7.396674, val_loss:7.632916, asu_loss:4.099435, size_loss:2.298620, opcode_loss:1.234677, time_diff_loss:0.000184, asu_accu:0.123094, opcode:0.622776, cost_time: 0:01:38.497280
+epoch 31 train_loss:7.394801, val_loss:7.672763, asu_loss:4.099484, size_loss:2.335109, opcode_loss:1.237985, time_diff_loss:0.000184, asu_accu:0.124328, opcode:0.613565, cost_time: 0:01:38.355988
+epoch 32 train_loss:7.393799, val_loss:7.646622, asu_loss:4.097497, size_loss:2.316468, opcode_loss:1.232473, time_diff_loss:0.000184, asu_accu:0.124799, opcode:0.618570, cost_time: 0:01:38.354509
+epoch 33 train_loss:7.393138, val_loss:7.606587, asu_loss:4.098457, size_loss:2.280980, opcode_loss:1.226966, time_diff_loss:0.000184, asu_accu:0.123909, opcode:0.630459, cost_time: 0:01:38.766204
+epoch 34 train_loss:7.391187, val_loss:7.641536, asu_loss:4.097174, size_loss:2.317913, opcode_loss:1.226266, time_diff_loss:0.000184, asu_accu:0.124669, opcode:0.634135, cost_time: 0:01:38.654906
+epoch 35 train_loss:7.391002, val_loss:7.625002, asu_loss:4.098508, size_loss:2.306224, opcode_loss:1.220086, time_diff_loss:0.000184, asu_accu:0.123419, opcode:0.644176, cost_time: 0:01:38.387748
+epoch 36 train_loss:7.387830, val_loss:7.577614, asu_loss:4.098270, size_loss:2.261075, opcode_loss:1.218085, time_diff_loss:0.000184, asu_accu:0.123892, opcode:0.651728, cost_time: 0:01:38.327161
+epoch 37 train_loss:7.388781, val_loss:7.648062, asu_loss:4.097570, size_loss:2.326434, opcode_loss:1.223875, time_diff_loss:0.000184, asu_accu:0.124683, opcode:0.640364, cost_time: 0:01:39.745579
+epoch 38 train_loss:7.387476, val_loss:7.633090, asu_loss:4.098102, size_loss:2.320122, opcode_loss:1.214682, time_diff_loss:0.000184, asu_accu:0.124777, opcode:0.651025, cost_time: 0:01:38.631239
+epoch 39 train_loss:7.387496, val_loss:7.646887, asu_loss:4.098348, size_loss:2.329382, opcode_loss:1.218972, time_diff_loss:0.000184, asu_accu:0.125424, opcode:0.651765, cost_time: 0:01:38.845452
+epoch 40 train_loss:7.386141, val_loss:7.607493, asu_loss:4.098373, size_loss:2.296576, opcode_loss:1.212360, time_diff_loss:0.000184, asu_accu:0.126251, opcode:0.664577, cost_time: 0:01:38.012825
+epoch 41 train_loss:7.385205, val_loss:7.672116, asu_loss:4.098590, size_loss:2.358753, opcode_loss:1.214590, time_diff_loss:0.000184, asu_accu:0.124812, opcode:0.655893, cost_time: 0:01:39.313474
+epoch 42 train_loss:7.384626, val_loss:7.649006, asu_loss:4.098186, size_loss:2.336214, opcode_loss:1.214422, time_diff_loss:0.000184, asu_accu:0.126771, opcode:0.665554, cost_time: 0:01:35.548634
+epoch 43 train_loss:7.384398, val_loss:7.661651, asu_loss:4.098531, size_loss:2.358445, opcode_loss:1.204491, time_diff_loss:0.000184, asu_accu:0.126555, opcode:0.669614, cost_time: 0:01:34.602901
+epoch 44 train_loss:7.384402, val_loss:7.631810, asu_loss:4.098139, size_loss:2.328657, opcode_loss:1.204830, time_diff_loss:0.000184, asu_accu:0.127002, opcode:0.669914, cost_time: 0:01:38.935455
+epoch 45 train_loss:7.383488, val_loss:7.641192, asu_loss:4.097869, size_loss:2.337825, opcode_loss:1.205314, time_diff_loss:0.000184, asu_accu:0.127197, opcode:0.668810, cost_time: 0:01:39.008710
+epoch 46 train_loss:7.381163, val_loss:7.647550, asu_loss:4.098694, size_loss:2.341560, opcode_loss:1.207112, time_diff_loss:0.000184, asu_accu:0.126455, opcode:0.667310, cost_time: 0:01:38.838073
+epoch 47 train_loss:7.380918, val_loss:7.650466, asu_loss:4.097172, size_loss:2.352040, opcode_loss:1.201070, time_diff_loss:0.000184, asu_accu:0.127113, opcode:0.670110, cost_time: 0:01:38.602042
+epoch 48 train_loss:7.380587, val_loss:7.647811, asu_loss:4.097941, size_loss:2.344215, opcode_loss:1.205471, time_diff_loss:0.000184, asu_accu:0.126790, opcode:0.661300, cost_time: 0:01:38.459917
+epoch 49 train_loss:7.380510, val_loss:7.666231, asu_loss:4.098776, size_loss:2.356895, opcode_loss:1.210377, time_diff_loss:0.000184, asu_accu:0.127250, opcode:0.656190, cost_time: 0:01:38.979966
+epoch 50 train_loss:7.379291, val_loss:7.682248, asu_loss:4.098160, size_loss:2.376690, opcode_loss:1.207214, time_diff_loss:0.000184, asu_accu:0.126793, opcode:0.666333, cost_time: 0:01:39.003553
+epoch 51 train_loss:7.377735, val_loss:7.667464, asu_loss:4.098157, size_loss:2.361055, opcode_loss:1.208067, time_diff_loss:0.000184, asu_accu:0.127278, opcode:0.658089, cost_time: 0:01:38.950093
+epoch 52 train_loss:7.378124, val_loss:7.695694, asu_loss:4.100150, size_loss:2.385479, opcode_loss:1.209881, time_diff_loss:0.000184, asu_accu:0.126557, opcode:0.659431, cost_time: 0:01:38.736962
+epoch 53 train_loss:7.377169, val_loss:7.687017, asu_loss:4.098552, size_loss:2.378862, opcode_loss:1.209420, time_diff_loss:0.000184, asu_accu:0.127744, opcode:0.651046, cost_time: 0:01:38.842544
+epoch 54 train_loss:7.376074, val_loss:7.692077, asu_loss:4.099375, size_loss:2.380368, opcode_loss:1.212150, time_diff_loss:0.000184, asu_accu:0.127543, opcode:0.654103, cost_time: 0:01:38.295473
+epoch 55 train_loss:7.374695, val_loss:7.680805, asu_loss:4.099788, size_loss:2.370980, opcode_loss:1.209853, time_diff_loss:0.000184, asu_accu:0.126022, opcode:0.656735, cost_time: 0:01:37.773771
+epoch 56 train_loss:7.373528, val_loss:7.693297, asu_loss:4.098964, size_loss:2.381921, opcode_loss:1.212229, time_diff_loss:0.000184, asu_accu:0.126818, opcode:0.652252, cost_time: 0:01:39.946007
+epoch 57 train_loss:7.372927, val_loss:7.683982, asu_loss:4.096378, size_loss:2.382281, opcode_loss:1.205139, time_diff_loss:0.000184, asu_accu:0.128317, opcode:0.661424, cost_time: 0:01:39.609519
+epoch 58 train_loss:7.373166, val_loss:7.724191, asu_loss:4.100614, size_loss:2.406496, opcode_loss:1.216897, time_diff_loss:0.000184, asu_accu:0.127344, opcode:0.647714, cost_time: 0:01:39.929259
+epoch 59 train_loss:7.372996, val_loss:7.714735, asu_loss:4.099233, size_loss:2.406550, opcode_loss:1.208768, time_diff_loss:0.000184, asu_accu:0.128441, opcode:0.659317, cost_time: 0:01:39.828520
+epoch 60 train_loss:7.373309, val_loss:7.703546, asu_loss:4.100261, size_loss:2.391063, opcode_loss:1.212039, time_diff_loss:0.000184, asu_accu:0.126931, opcode:0.655213, cost_time: 0:01:39.226112
+epoch 61 train_loss:7.371811, val_loss:7.715836, asu_loss:4.100829, size_loss:2.403252, opcode_loss:1.211571, time_diff_loss:0.000184, asu_accu:0.127040, opcode:0.654624, cost_time: 0:01:39.708998
+epoch 62 train_loss:7.370979, val_loss:7.723534, asu_loss:4.099963, size_loss:2.411586, opcode_loss:1.211802, time_diff_loss:0.000184, asu_accu:0.127056, opcode:0.653687, cost_time: 0:01:40.075328
+epoch 63 train_loss:7.370330, val_loss:7.717316, asu_loss:4.100354, size_loss:2.404212, opcode_loss:1.212566, time_diff_loss:0.000184, asu_accu:0.127426, opcode:0.652053, cost_time: 0:01:39.794118
+epoch 64 train_loss:7.369587, val_loss:7.720233, asu_loss:4.100344, size_loss:2.406725, opcode_loss:1.212980, time_diff_loss:0.000184, asu_accu:0.126022, opcode:0.648571, cost_time: 0:01:40.070767
+epoch 65 train_loss:7.367720, val_loss:7.747082, asu_loss:4.101089, size_loss:2.404703, opcode_loss:1.241107, time_diff_loss:0.000184, asu_accu:0.126756, opcode:0.655311, cost_time: 0:01:39.283546
+epoch 66 train_loss:7.363635, val_loss:7.744493, asu_loss:4.100909, size_loss:2.405228, opcode_loss:1.238172, time_diff_loss:0.000184, asu_accu:0.126632, opcode:0.660357, cost_time: 0:01:39.588765
+epoch 67 train_loss:7.362326, val_loss:7.747539, asu_loss:4.101207, size_loss:2.410587, opcode_loss:1.235561, time_diff_loss:0.000184, asu_accu:0.126189, opcode:0.666108, cost_time: 0:01:39.604617
+epoch 68 train_loss:7.361947, val_loss:7.746112, asu_loss:4.101530, size_loss:2.408672, opcode_loss:1.235727, time_diff_loss:0.000184, asu_accu:0.126010, opcode:0.665648, cost_time: 0:01:40.580177
+epoch 69 train_loss:7.361037, val_loss:7.744891, asu_loss:4.100091, size_loss:2.413264, opcode_loss:1.231352, time_diff_loss:0.000184, asu_accu:0.126724, opcode:0.671963, cost_time: 0:01:40.348438
+epoch 70 train_loss:7.359677, val_loss:7.746586, asu_loss:4.102399, size_loss:2.409444, opcode_loss:1.234560, time_diff_loss:0.000184, asu_accu:0.125509, opcode:0.668374, cost_time: 0:01:39.648680
+epoch 71 train_loss:7.359633, val_loss:7.769425, asu_loss:4.101755, size_loss:2.430316, opcode_loss:1.237170, time_diff_loss:0.000184, asu_accu:0.126825, opcode:0.668549, cost_time: 0:01:40.183170
+epoch 72 train_loss:7.360060, val_loss:7.757227, asu_loss:4.102163, size_loss:2.418658, opcode_loss:1.236222, time_diff_loss:0.000184, asu_accu:0.125881, opcode:0.668741, cost_time: 0:01:38.495031
+epoch 73 train_loss:7.357958, val_loss:7.749899, asu_loss:4.101713, size_loss:2.414714, opcode_loss:1.233288, time_diff_loss:0.000184, asu_accu:0.126046, opcode:0.670483, cost_time: 0:01:35.296854
+epoch 74 train_loss:7.358681, val_loss:7.766689, asu_loss:4.102470, size_loss:2.428206, opcode_loss:1.235829, time_diff_loss:0.000184, asu_accu:0.126290, opcode:0.669321, cost_time: 0:01:33.609706
+epoch 75 train_loss:7.356034, val_loss:7.775003, asu_loss:4.102361, size_loss:2.434737, opcode_loss:1.237722, time_diff_loss:0.000184, asu_accu:0.126054, opcode:0.666680, cost_time: 0:01:33.629539
+epoch 76 train_loss:7.356434, val_loss:7.775232, asu_loss:4.102973, size_loss:2.436852, opcode_loss:1.235224, time_diff_loss:0.000184, asu_accu:0.125646, opcode:0.670536, cost_time: 0:01:33.421540
+epoch 77 train_loss:7.356461, val_loss:7.762339, asu_loss:4.103196, size_loss:2.425959, opcode_loss:1.233000, time_diff_loss:0.000184, asu_accu:0.125019, opcode:0.671713, cost_time: 0:01:33.449421
+epoch 78 train_loss:7.354886, val_loss:7.784792, asu_loss:4.102813, size_loss:2.444808, opcode_loss:1.236987, time_diff_loss:0.000184, asu_accu:0.125915, opcode:0.666594, cost_time: 0:01:33.365874
+epoch 79 train_loss:7.355448, val_loss:7.764546, asu_loss:4.103227, size_loss:2.427716, opcode_loss:1.233419, time_diff_loss:0.000184, asu_accu:0.125577, opcode:0.671753, cost_time: 0:01:32.993803
+epoch 80 train_loss:7.355596, val_loss:7.775544, asu_loss:4.102924, size_loss:2.438295, opcode_loss:1.234141, time_diff_loss:0.000184, asu_accu:0.126117, opcode:0.670303, cost_time: 0:01:33.335302
+epoch 81 train_loss:7.353682, val_loss:7.771779, asu_loss:4.103522, size_loss:2.432949, opcode_loss:1.235125, time_diff_loss:0.000184, asu_accu:0.125314, opcode:0.668872, cost_time: 0:01:33.691320
+epoch 82 train_loss:7.353177, val_loss:7.776951, asu_loss:4.103305, size_loss:2.437824, opcode_loss:1.235638, time_diff_loss:0.000184, asu_accu:0.125329, opcode:0.668887, cost_time: 0:01:33.518015
+epoch 83 train_loss:7.353094, val_loss:7.771550, asu_loss:4.103646, size_loss:2.437189, opcode_loss:1.230531, time_diff_loss:0.000184, asu_accu:0.125426, opcode:0.673804, cost_time: 0:01:33.111684
+epoch 84 train_loss:7.352182, val_loss:7.788093, asu_loss:4.104006, size_loss:2.449522, opcode_loss:1.234381, time_diff_loss:0.000184, asu_accu:0.125550, opcode:0.670688, cost_time: 0:01:33.420668
+epoch 85 train_loss:7.351620, val_loss:7.787289, asu_loss:4.104275, size_loss:2.448025, opcode_loss:1.234805, time_diff_loss:0.000184, asu_accu:0.125567, opcode:0.671255, cost_time: 0:01:33.309547
+epoch 86 train_loss:7.352593, val_loss:7.791629, asu_loss:4.104217, size_loss:2.452250, opcode_loss:1.234978, time_diff_loss:0.000184, asu_accu:0.124955, opcode:0.670431, cost_time: 0:01:33.209044
+epoch 87 train_loss:7.351047, val_loss:7.787862, asu_loss:4.103955, size_loss:2.451140, opcode_loss:1.232583, time_diff_loss:0.000184, asu_accu:0.124989, opcode:0.673601, cost_time: 0:01:32.433067
+epoch 88 train_loss:7.350639, val_loss:7.801620, asu_loss:4.103968, size_loss:2.463737, opcode_loss:1.233730, time_diff_loss:0.000184, asu_accu:0.125083, opcode:0.671544, cost_time: 0:01:33.015222
+epoch 89 train_loss:7.350900, val_loss:7.799763, asu_loss:4.103938, size_loss:2.461581, opcode_loss:1.234060, time_diff_loss:0.000184, asu_accu:0.124730, opcode:0.671599, cost_time: 0:01:33.504184
+epoch 90 train_loss:7.348766, val_loss:7.796961, asu_loss:4.103636, size_loss:2.458496, opcode_loss:1.234645, time_diff_loss:0.000184, asu_accu:0.125261, opcode:0.672080, cost_time: 0:01:33.132614
+epoch 91 train_loss:7.348454, val_loss:7.786669, asu_loss:4.103891, size_loss:2.450094, opcode_loss:1.232500, time_diff_loss:0.000184, asu_accu:0.125248, opcode:0.674523, cost_time: 0:01:33.409887
+epoch 92 train_loss:7.348447, val_loss:7.798017, asu_loss:4.103439, size_loss:2.460753, opcode_loss:1.233641, time_diff_loss:0.000184, asu_accu:0.125376, opcode:0.672551, cost_time: 0:01:33.068937
+epoch 93 train_loss:7.348363, val_loss:7.805022, asu_loss:4.104020, size_loss:2.467803, opcode_loss:1.233015, time_diff_loss:0.000184, asu_accu:0.125009, opcode:0.673212, cost_time: 0:01:33.072134
+epoch 94 train_loss:7.348333, val_loss:7.799731, asu_loss:4.103337, size_loss:2.464991, opcode_loss:1.231219, time_diff_loss:0.000184, asu_accu:0.125719, opcode:0.674934, cost_time: 0:01:33.709856
+epoch 95 train_loss:7.349221, val_loss:7.794800, asu_loss:4.104228, size_loss:2.458986, opcode_loss:1.231402, time_diff_loss:0.000184, asu_accu:0.125073, opcode:0.675984, cost_time: 0:01:33.423386
+epoch 96 train_loss:7.348285, val_loss:7.789219, asu_loss:4.103620, size_loss:2.453857, opcode_loss:1.231559, time_diff_loss:0.000184, asu_accu:0.125312, opcode:0.675329, cost_time: 0:01:32.819992
+epoch 97 train_loss:7.347753, val_loss:7.792309, asu_loss:4.103815, size_loss:2.455282, opcode_loss:1.233029, time_diff_loss:0.000184, asu_accu:0.125325, opcode:0.673943, cost_time: 0:01:32.680814
+epoch 98 train_loss:7.347833, val_loss:7.786047, asu_loss:4.103716, size_loss:2.448537, opcode_loss:1.233610, time_diff_loss:0.000184, asu_accu:0.125086, opcode:0.674397, cost_time: 0:01:33.251618
+epoch 99 train_loss:7.346914, val_loss:7.789652, asu_loss:4.103745, size_loss:2.454933, opcode_loss:1.230789, time_diff_loss:0.000184, asu_accu:0.125255, opcode:0.676593, cost_time: 0:01:33.330120
+epoch100 train_loss:7.347343, val_loss:7.790561, asu_loss:4.104295, size_loss:2.452265, opcode_loss:1.233816, time_diff_loss:0.000184, asu_accu:0.125039, opcode:0.674619, cost_time: 0:01:33.932129
+epoch101 train_loss:7.347788, val_loss:7.794030, asu_loss:4.104141, size_loss:2.456435, opcode_loss:1.233270, time_diff_loss:0.000184, asu_accu:0.125162, opcode:0.675088, cost_time: 0:01:32.921805
+epoch102 train_loss:7.346364, val_loss:7.786790, asu_loss:4.103372, size_loss:2.451608, opcode_loss:1.231626, time_diff_loss:0.000184, asu_accu:0.125563, opcode:0.677682, cost_time: 0:01:32.766153
+epoch103 train_loss:7.345619, val_loss:7.786731, asu_loss:4.104326, size_loss:2.448530, opcode_loss:1.233691, time_diff_loss:0.000184, asu_accu:0.125316, opcode:0.675391, cost_time: 0:01:32.909626
+epoch104 train_loss:7.345433, val_loss:7.788206, asu_loss:4.104099, size_loss:2.448331, opcode_loss:1.235592, time_diff_loss:0.000184, asu_accu:0.125340, opcode:0.673761, cost_time: 0:01:33.133351
+epoch105 train_loss:7.345226, val_loss:7.790593, asu_loss:4.103499, size_loss:2.452324, opcode_loss:1.234586, time_diff_loss:0.000184, asu_accu:0.125639, opcode:0.675877, cost_time: 0:01:33.080016
+epoch106 train_loss:7.344708, val_loss:7.783470, asu_loss:4.103850, size_loss:2.445951, opcode_loss:1.233486, time_diff_loss:0.000184, asu_accu:0.125511, opcode:0.676555, cost_time: 0:01:33.011958
+epoch107 train_loss:7.345179, val_loss:7.786134, asu_loss:4.104092, size_loss:2.447036, opcode_loss:1.234822, time_diff_loss:0.000184, asu_accu:0.125471, opcode:0.675839, cost_time: 0:01:33.470865
+epoch108 train_loss:7.345078, val_loss:7.785906, asu_loss:4.103985, size_loss:2.445524, opcode_loss:1.236213, time_diff_loss:0.000184, asu_accu:0.125171, opcode:0.675250, cost_time: 0:01:33.827422
+epoch109 train_loss:7.344568, val_loss:7.790915, asu_loss:4.103989, size_loss:2.451462, opcode_loss:1.235280, time_diff_loss:0.000184, asu_accu:0.125312, opcode:0.676446, cost_time: 0:01:33.183920
+epoch110 train_loss:7.346095, val_loss:7.794859, asu_loss:4.103985, size_loss:2.452520, opcode_loss:1.238171, time_diff_loss:0.000184, asu_accu:0.125113, opcode:0.674294, cost_time: 0:01:33.151843
+epoch111 train_loss:7.344623, val_loss:7.785787, asu_loss:4.104158, size_loss:2.443529, opcode_loss:1.237916, time_diff_loss:0.000184, asu_accu:0.125229, opcode:0.675984, cost_time: 0:01:33.174497
+epoch112 train_loss:7.344579, val_loss:7.782359, asu_loss:4.104266, size_loss:2.439522, opcode_loss:1.238386, time_diff_loss:0.000184, asu_accu:0.125169, opcode:0.675419, cost_time: 0:01:33.155820
+epoch113 train_loss:7.344555, val_loss:7.783380, asu_loss:4.104069, size_loss:2.440129, opcode_loss:1.238998, time_diff_loss:0.000184, asu_accu:0.125297, opcode:0.674994, cost_time: 0:01:33.308811
+epoch114 train_loss:7.343916, val_loss:7.785637, asu_loss:4.104394, size_loss:2.442313, opcode_loss:1.238746, time_diff_loss:0.000184, asu_accu:0.124989, opcode:0.675623, cost_time: 0:01:32.935202
+epoch115 train_loss:7.343860, val_loss:7.782364, asu_loss:4.104566, size_loss:2.438354, opcode_loss:1.239261, time_diff_loss:0.000184, asu_accu:0.124927, opcode:0.674675, cost_time: 0:01:33.281104
+epoch116 train_loss:7.344301, val_loss:7.782991, asu_loss:4.104351, size_loss:2.440325, opcode_loss:1.238131, time_diff_loss:0.000184, asu_accu:0.125225, opcode:0.676653, cost_time: 0:01:33.521196
+epoch117 train_loss:7.344064, val_loss:7.788495, asu_loss:4.104471, size_loss:2.443409, opcode_loss:1.240432, time_diff_loss:0.000184, asu_accu:0.125090, opcode:0.675214, cost_time: 0:01:33.007891
+epoch118 train_loss:7.342491, val_loss:7.779344, asu_loss:4.104058, size_loss:2.435671, opcode_loss:1.239431, time_diff_loss:0.000184, asu_accu:0.125242, opcode:0.676215, cost_time: 0:01:33.392365
+epoch119 train_loss:7.341798, val_loss:7.781109, asu_loss:4.104339, size_loss:2.436033, opcode_loss:1.240553, time_diff_loss:0.000184, asu_accu:0.124910, opcode:0.674741, cost_time: 0:01:33.541038
+epoch120 train_loss:7.341896, val_loss:7.785055, asu_loss:4.104246, size_loss:2.440849, opcode_loss:1.239775, time_diff_loss:0.000184, asu_accu:0.124929, opcode:0.675670, cost_time: 0:01:33.358187
+epoch121 train_loss:7.341682, val_loss:7.781928, asu_loss:4.104657, size_loss:2.438498, opcode_loss:1.238589, time_diff_loss:0.000184, asu_accu:0.124992, opcode:0.677376, cost_time: 0:01:32.843279
+epoch122 train_loss:7.341151, val_loss:7.778244, asu_loss:4.104284, size_loss:2.433682, opcode_loss:1.240093, time_diff_loss:0.000184, asu_accu:0.124996, opcode:0.675712, cost_time: 0:01:33.283315
+epoch123 train_loss:7.341974, val_loss:7.783796, asu_loss:4.104481, size_loss:2.439349, opcode_loss:1.239783, time_diff_loss:0.000184, asu_accu:0.125163, opcode:0.675654, cost_time: 0:01:33.406393
+epoch124 train_loss:7.340694, val_loss:7.780564, asu_loss:4.104121, size_loss:2.436416, opcode_loss:1.239843, time_diff_loss:0.000184, asu_accu:0.125346, opcode:0.676271, cost_time: 0:01:32.867451

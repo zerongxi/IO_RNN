@@ -24,12 +24,12 @@ tr_ratio = 0.7
 va_ratio = 0.1
 te_ratio = 1.0 - tr_ratio - va_ratio
 optimizer = 'Adam'
-lr = 1e-3
+lr = 1e-2
 lr_decay = 0.98
 print_step = 100
 step_size = 3
 n_epoch = 200
-early_stopping = 5
+early_stopping = 100
 clip_norm = 5.0
 
 debug = None #50000
